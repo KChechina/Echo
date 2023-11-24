@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo greeting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header_logo" src="img/echo.png" alt="logo">
+        </div>
+    </header>
+    <main class="greeting">
+        <div class="greeting__title">
+            <h1 class="greeting__title_text">Давай познакомимся!</h1>
+        </div>
+        <div class="greeting__form">
+            <form action="post" class="greeting__form_body form">
+                <div class="form__item">
+                    <label for="name" class="form_label">Имя и фамилия</label>
+                    <input type="text" id="name" class="form_input" placeholder="Введите имя и фамилию">
+                </div>
+                <div class="form__item">
+                    <label for="nikname" class="form_label">Имя пользователя</label>
+                    <input type="text" id="nikname" class="form_input" placeholder="Введите никнейм">
+                </div>
+                <button type="submit" class="further__button intro__buttons">Далее</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</body>
+</html>
