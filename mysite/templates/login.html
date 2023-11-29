@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echo</title>
     <link rel="stylesheet" href="../static/style.css">
+    <link href="{% static '../static/style.css' %}" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
         <h1 class="welcometextintro">Впереди много интересного...</h1>
         <div class="intro__form">
             <a href="authorisation.html"><button class="login__button intro__buttons">Войти</button></a></button>
-            <a href="registration.html"><button class="authorised__button intro__buttons">Зарегистрироваться</button></a>
+            <a href="registration"><button class="authorised__button intro__buttons">Зарегистрироваться</button></a>
             <p class="welcometext">или</p>
             <button class="intro__buttons vk__button"> <img class="vk_icon" src="../static/img/24.png" alt="VK"> Войти через ВКонтакте</button>
         </div>
