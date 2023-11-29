@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password recovery</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header_logo" src="../static/img/echo.png" alt="logo">
+        </div>
+    </header>
+    <main class="pasrec__block">
+        <div class="recovery__form">
+            <form action="get" class="recovery__form_block">
+                <h1 class="form__title">Восстановить пароль</h1>
+                <p class="form__hint">3. Придумайте новый пароль</p>
+                <div class="form__item">
+                    <label class="form_label" for="password">Пароль</label>
+                    <input type="password" name="password" id="password" placeholder="Не менее 8 символов" class="form_input" required>
+                </div>
+                <div class="form__item">
+                    <label class="form_label" for="password">Повтори пароль</label>
+                    <input type="password" name="password" id="password" placeholder="Не менее 8 символов" class="form_input" required>
+                </div>
+    
+                <button type="submit" class="further__button intro__buttons">Продолжить</button>
+            </form>
+            <p class="welcometext">или</p>
+            <button class="intro__buttons vk__button"> <img class="vk_icon" src="../static/img/24.png" alt="VK"> Войти через ВКонтакте</button>
+        </div>
+    </main>
+</body>
+<script src="../static/script.js"></script>
+</html>
