@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo profile editor</title>
+    <link rel="stylesheet" href="../static/styleprofile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header__block profile">
+        <div class="profile__cap">
+            <a href="profile.html" class="profile__cap_link"><img class="back__arrow" src="../static/img/left_arrow.svg" alt="back"></a>
+            <div class="profile__cap_text">Редактировать профиль</div>
+            <a href="#" class="profile__cap_link"><img class="edit_icon" src="../static/img/cross.svg" alt="edit"></a>
+        </div>
+    </header>
+    <main class="main__block">
+        <div class="profile__content">
+            <div class="profile__info">
+                <button class="profile__photo"><img src="../static/img/plus.svg" alt="photo"></button>
+                <h2 class="profile__name">Мария Иванова</h2>
+                <p class="profile__nikname">@mari.iva</p>
+                <p class="editor__text">Все, что вы добавите, поможет вашим друзьям узнать вас получше, а сервис сформирует самые подходящие подборки исходя из ваших <br> интересов</p>
+            </div>
+            <form action="post" class="profile__edit_form">
+                <label for="name" class="edit__form_label">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Введите имя" class="edit__form_input">
+                <label for="surname" class="edit__form_label">Фамилия</label>
+                <input type="text" name="surname" id="surname" placeholder="Введите фамилия" class="edit__form_input">
+                <label for="sex" class="edit__form_label">Пол</label>
+                <select name="sex" id="sex" class="edit__form_input">
+                    <option value="female" >Женский</option>
+                    <option value="male" class="edit__form_input">Мужской</option>
+                </select>
+                <label for="birth-date" class="edit__form_label">Дата рождения</label>
+                <input type="date" name="birth-date" id="birth-date" placeholder="Введите имя" class="edit__form_input">
+                <label for="city" class="edit__form_label">Город</label>
+                <select name="city" id="city" class="edit__form_input">
+                    <option value="v1" class="edit__form_input">Москва</option>
+                    <option value="v2" class="edit__form_input">Санкт-Петербург</option>
+                    <option value="v3" class="edit__form_input">Казань</option>
+                    <option value="v4" class="edit__form_input">Сочи</option>
+                    <option value="v5" class="edit__form_input">Екатеринбург</option>
+                    <option value="v6" class="edit__form_input">Новосибирск</option>
+                    <option value="v7" class="edit__form_input">Красноярск</option>
+                    <option value="v8" class="edit__form_input">Владивосток</option>
+                    <option value="v9" class="edit__form_input">Челябинск</option>
+                </select>                
+                <label for="nikname" class="edit__form_label">Никнейм</label>
+                <input type="text" name="nikname" id="nikname" placeholder="@mari.iva" class="edit__form_input">
+                <label for="details" class="edit__form_label">Добавьте что-нибудь интересное</label>
+                <textarea name="details" id="details" cols="20" rows="7" class="edit__form_input"></textarea>
+            </form>
+            
+        </div>
+    </main>
+    <footer>
+            <div class="form__button_field">
+                <button type="submit" class="edit__form_button">Сохранить</button>
+            </div>
+    </footer>
+</body>
+</html>

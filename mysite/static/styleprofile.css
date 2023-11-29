@@ -144,3 +144,73 @@ a.exit_link{
     color: #9181FE;
     fill: #9181FE;
 }
+
+.profile__photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    background-color: #F8F7FF;
+    border: 1px solid #DDDBFF;
+    text-align: center;
+}
+.editor__text{
+    margin-top: 24px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #666666;
+}
+.profile__edit_form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.edit__form_label{
+    font-family: 'Sarala', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #444444;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.edit__form_input{
+    max-width: 343px;
+    width: 100%;
+    height: 40px;
+    background-color: #F8F7FF;
+    border: 1px solid #DDDBFF;
+    border-radius: 6px;
+    padding: 5px;
+}
+.form__button_field{
+    max-width: 375px;
+    width: 100%;
+    height: 68px;
+    background-color: #F8F7FF;
+    border-top: #DDDBFF;
+    margin: 15px 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit__form_button{
+    max-width: 351px;
+    width: 100%;
+    height: 44px;
+    background-color: #9181FE;
+    color: #FDFDFD;
+    font-family: 'Sarala', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    border-radius: 10px;
+}
