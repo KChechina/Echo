@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active {
+    outline: none;
+}
+a:focus,a:active {
+    outline: none;
+}
+nav, footer, header,aside {
+    display: block;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button,textarea{
+    font-family: inherit ;
+}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none; color: inherit;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
+
+
+.header__block{
+    max-width: 375px;
+    width: 100%;
+    max-height: 64px;
+    height: 100%;
+    background-color: #F8F7FF;
+    border-bottom: 1px solid #DDDBFF;
+    margin: 0 auto;
+}
+.profile__cap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #444444;
+    margin: 0 10px;
+}
+.profile__cap_link, .profile__cap_text{
+    margin: 10px 0;
+}
+.profile__cap_link{
+    cursor: pointer;
+}
+
+.main__block{
+    margin: 0 auto;
+    max-width: 375px;
+    width: 100%;
+}
+.profile__content{
+    color: #444444;
+    font-family: 'Sarala', sans-serif;
+    margin: 35px 15px;
+}
+.profile__info{
+    text-align: center;
+}
+.profile__name{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 14px;
+}
+.profile__nikname{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #FCAE59;
+}
+.profile__menu{
+    margin-top: 30px;
+    border-bottom: 0.5px solid #DDDBFF;
+}
+.profile__menu_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+.profile__menu_item-right{
+    display: flex;
+    align-items: center;
+}
+.profile__menu_item-icon{
+    width: 24px;
+    margin-right: 20px;
+}
+a.exit_link{
+    display: block;
+    margin-top: 14px;
+    color: #E64646;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 20px;
+    
+}

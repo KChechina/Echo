@@ -208,9 +208,13 @@ body{
     height: 70px;
     background-color: #F8F7FF;
     border-radius: 10px;
-    border: 0.5px, solid, #DDDBFF;
+    border: 0.5px solid #DDDBFF;
     text-align: center;
     font-size: 28px;
     color: #444444;
     font-weight: 400;
+}
+
+.main{
+    margin: 0 16px;
 }
