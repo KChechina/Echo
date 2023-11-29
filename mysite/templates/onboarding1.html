@@ -3,17 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onboarding
-    </title>
+    <title>Onboarding</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="onb__header">
+            <a href="#" class="onb__link">Пропустить</a>
+        </div>
+    </header>
     <main class="main">
         <div class="onboarding__content onb">
-            <a href="#" class="onb__link">Пропустить</a>
             <h1 class="onb__title">Выбери то, что тебе интересно</h1>
-            <p class="onb__text">Ты всегда сможешь изменить свой выбор в профиле ;)</p>
+            <p class="onb__text">Ты всегда сможешь изменить <br> свой выбор в профиле ;)</p>
             <div class="onb__options">
-                
+                <div class="onb__options_item">
+                    <div class="item_checkbox_field">
+                        <img src="" alt="" class="checkbox_bg">
+                        <input type="checkbox" name="books" id="books">
+                    </div>
+                    <label for="books">Книги и статьи</label>
+                </div>
+                <div class="onb__options_item">
+                    <div class="item_checkbox_field">
+                        <input type="checkbox" name="cafe" id="cafe">
+                    </div>
+                    <label for="cafe">Кафе и рестораны</label>
+                </div>
+                <div class="onb__options_item">
+                    <div class="item_checkbox_field">
+                        <input type="checkbox" name="movie" id="movie">
+                    </div>
+                    <label for="movie">Кино и сериалы</label>
+                </div>
+                <div class="onb__options_item">
+                    <div class="item_checkbox_field">
+                        <input type="checkbox" name="exibition" id="exibition">
+                    </div>
+                    <label for="exibition">Выставки</label>
+                </div>
+                <div class="onb__options_item">
+                    <div class="item_checkbox_field">
+                        <input type="checkbox" name="concerts" id="concerts">
+                    </div>
+                    <label for="concerts">Спектакли и концерты</label>
+                </div>
+            </div>
+            <div class="onb__button_field">
+                <button type="submit">Далее</button>
             </div>
         </div>
     </main>

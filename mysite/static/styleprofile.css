@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 
 
 .header__block{
-    max-width: 375px;
+    max-width: 480px;
     width: 100%;
     max-height: 64px;
     height: 100%;
@@ -191,12 +191,12 @@ a.exit_link{
     padding: 5px;
 }
 .form__button_field{
-    max-width: 375px;
+    max-width: 480px;
     width: 100%;
     height: 68px;
     background-color: #F8F7FF;
-    border-top: #DDDBFF;
-    margin: 15px 0 0;
+    border-top: 1px solid #DDDBFF;
+    margin: 15px auto 0;
     text-align: center;
     display: flex;
     justify-content: center;

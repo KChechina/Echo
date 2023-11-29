@@ -218,3 +218,34 @@ body{
 .main{
     margin: 0 16px;
 }
+.onb__header{
+    text-align: right;
+    margin: 23px 16px 21px;
+}
+.onb__link{
+    color: #9181FE;
+    font-style: normal;
+}
+.onboarding__content{
+    text-align: center;
+}
+.onb__title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    font-style: normal;
+}
+.onb__text{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+.onb__options{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
