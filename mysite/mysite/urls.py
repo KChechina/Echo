@@ -22,5 +22,16 @@ urlpatterns = [
     path("polls/", include("polls.urls")),
     path("admin/", admin.site.urls),
     path("login/", views.login),
-    path("login/registration/", views.registration)
+    path("registration/", views.registration),
+    path("authorisation/", views.authorisation),
+    path("greetingscreen/", views.greetingscreen),
+    path("emailconfirmation/", views.emailconfirmation),
+    path("onboarding1/", views.onboarding1),
+    path("profile/", views.profile),
+    path("profile_editor/", views.profile_editor),
+    path("passrec1/", views.passrec1),  # восстановление пароля введение почты
+    path("passrec2/", views.passrec2),  # восстановление пароля введение кода
+    path("passrec3/", views.passrec3),  # новый пароль
+    path("passrec4/", views.passrec4),  # пароль изменен
+
 ]
