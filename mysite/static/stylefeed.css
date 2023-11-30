@@ -327,7 +327,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 10
 .svg_icon{
     fill: #888888;
 }
-.footer__toolbar_item:hover, .svg_icon:hover{
+.footer__toolbar_item:hover, .svg_icon:hover, .footer__toolbar_item:active, .svg_icon:active{
     color: #9181FE;
     fill: #9181FE;
 }
