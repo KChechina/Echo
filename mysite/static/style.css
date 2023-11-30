@@ -295,3 +295,43 @@ line-height: 22px;
 .onb__button:hover, .onb__button:active{
     background-color: #9181FE;
 }
+
+.main__block{
+    margin: 0 auto;
+    min-width: 375px;
+    width: 100%;
+    text-align: center;
+    font-family: "Sarala", sans-serif;
+}
+.content__block{
+    margin: 180px 16px 0 16px;
+}
+.contant__icon_bat{
+    width: 236px;
+    height: 236px;
+}
+.content__block_title{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.content__block_text{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.content__block_button{
+    margin-top: 38px;
+}
+.content__block_button-item{
+    min-width: 351px;
+    min-height: 44px;
+    background-color: #9181FE;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0 12px;
+}
