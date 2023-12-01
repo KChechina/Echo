@@ -42,3 +42,6 @@ def welcomescreen_view(request):
 
 def hobbyfeed_view(request):
     return render(request, "users/hobbyfeed.html")
+
+def reviewsfeed_view(request):
+    return render(request, "users/reviewsfeed.html")

@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import profile_view, RegisterView, profile_editor, welcomescreen_view, onboarding1_view, hobbyfeed_view
+from .views import profile_view, RegisterView, profile_editor, welcomescreen_view, onboarding1_view, hobbyfeed_view, reviewsfeed_view
 
 
 
@@ -16,5 +16,6 @@ urlpatterns = [
  path('welcomescreen', welcomescreen_view, name="welcomescreen"),
  path('onboarding1', onboarding1_view, name="onboarding1"),
  path('hobbyfeed', hobbyfeed_view, name="hobbyfeed"),
+ path('reviewsfeed', reviewsfeed_view, name="reviewsfeed"),
 
 ]
