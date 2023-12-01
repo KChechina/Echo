@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 
 
 def login(request):
@@ -17,8 +17,8 @@ def profile_editor(request):
 def authorisation(request):
     return render(request, 'authorisation.html')
 
-def greetingscreen(request):
-    return render(request, 'greetingscreen.html')
+# def greetingscreen(request):
+#     return render(request, 'greetingscreen.html')
 
 def emailconfirmation(request):
     return render(request, 'emailconfirmation.html')
@@ -37,3 +37,7 @@ def passrec3(request):
 
 def passrec4(request):
     return render(request, 'passrec4.html')
+
+def welcomescreen(request):
+    return render(request, 'welcomescreen.html')
+

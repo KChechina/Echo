@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="{% static '../static/style.css' %}" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header_logo" src="../static/img/echo.png" alt="logo">
+        </div>
+    </header>
+    <main class="login__content intro">
+        <h1 class="welcometextintro">Впереди много интересного...</h1>
+    <div class="intro__form">
+      <a href="{% url 'login' %}"><button class="login__button intro__buttons">Войти</button></a>
+      <a href="{% url 'register' %}"><button class="authorised__button intro__buttons">Зарегистрироваться</button></a>
+      <p class="welcometext">или</p>
+      <button class="intro__buttons vk__button"> <img class="vk_icon" src="../static/img/24.png" alt="VK"> Войти через ВКонтакте</button>
+    </div>
+  <p class="conditions">Продолжая, Вы соглашаетеся с нашими <a class="conditions__link" href="#">Условиями использования</a> и подтверждаете, что прочли наше <a class="conditions__link" href="#">Положение о конфиденциальности и использовании файлов cookie</a>.</p>
+    </main>
+</body>
+<script src="../static/script.js"></script>
+</html>

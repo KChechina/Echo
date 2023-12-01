@@ -19,19 +19,21 @@ from django.urls import include, path
 from . import views
 
 urlpatterns = [
-    path("polls/", include("polls.urls")),
     path("admin/", admin.site.urls),
+    path('home/', include('users.urls')),
     path("login/", views.login),
-    path("registration/", views.registration),
+    path("register/", views.registration),
     path("authorisation/", views.authorisation),
-    path("greetingscreen/", views.greetingscreen),
+    path("greetingscreen/", include('users.urls')),
     path("emailconfirmation/", views.emailconfirmation),
     path("onboarding1/", views.onboarding1),
-    path("profile/", views.profile),
-    path("profile_editor/", views.profile_editor),
+    # path("profile/", views.profile),
+    # path("profile_editor/", views.profile_editor),
     path("passrec1/", views.passrec1),  # восстановление пароля введение почты
     path("passrec2/", views.passrec2),  # восстановление пароля введение кода
     path("passrec3/", views.passrec3),  # новый пароль
     path("passrec4/", views.passrec4),  # пароль изменен
-
+    path("welcomescreen/", views.welcomescreen),
+    # path('user/registration/', registration),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]

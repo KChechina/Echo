@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo authorisation</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img class="header_logo" src="/static/img/echo.png" alt="logo">
+        </div>
+    </header>
+    <main class="authorisation__block">
+        <form class="authorisation__form form" action="post">
+            <div class="form__item">
+                {% csrf_token %}
+                <label class="form_label" for="email">Почта</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" class="form_input" required>
+            </div>
+            <div class="form__item">
+                <label class="form_label" for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="Пароль" class="form_input" required>
+            </div>
+            <div class="remindpassword" id="remindpassword"></div>
+            <button type="submit" class="formsubmit_button intro__buttons">Войти</button>
+        </form>
+        <p class="welcometext">или</p>
+        <button class="intro__buttons vk__button"> <img class="vk_icon" src="/static/img/24.png" alt="VK"> Войти через ВКонтакте</button>    </main>
+</body>
+<script src="/static/script.js"></script>
+</body>
+</html>
