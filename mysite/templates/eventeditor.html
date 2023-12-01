@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo events feed</title>
+    <link rel="stylesheet" href="../static/styleevent.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header__block">
+        <div class="editor__cap">
+            <a href="../profile/" class="editor__cap_link"><img class="back__arrow" src="../static/img/left_arrow.svg" alt="back"></a>
+            <div class="editor__cap_icons">
+                <a href="#"><img src="../static/img/left.svg" alt="back" class="back_icon"></a>
+                <a href="#"><img src="../static/img/right.svg" alt="next" class="right_icon"></a>
+            </div>
+            <a href="eventeditor2.html" class="editor__cap_link">Далее</a>
+        </div>
+    </header>
+    <main class="main__block">
+        <div class="editor__block">
+            <form action="" method="post" class="event__heading_form">
+                <textarea class="event_name" name="event_name" id="event_name" cols="30" rows="2" placeholder="Здесь должен быть заголовок"></textarea>
+                <textarea class="event_description" name="event_description" id="event_description" cols="30" rows="10" placeholder="А это место для  описания мероприятия"></textarea>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo events feed</title>
+    <link rel="stylesheet" href="../static/styleevent.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header__block">
+        <div class="editor__cap2">
+            <a href="eventeditor.html" class="editor__cap_link"><img class="back__arrow" src="../static/img/left_arrow.svg" alt="back"></a>
+            <div class="editor__cap_text">Создание мероприятия</div>
+        </div>
+    </header>
+    <main>
+        <div class="editor__block">
+            <form class="upload_form" method="post">
+                <h1 class="form_title" for="img_upload_field">Обложка мероприятия</h1>
+                <input type="file" id="img_upload_field" class="img_upload_field">
+                <div class="upload_container">
+                    <p class="upload_field_text">Здесь можно <label class="upload_label" for="img_upload_field">загрузить</label> свой файл</p>
+                    <p class="upload_field_hint">Поддерживаемые форматы: PNG, TIFF, JPG</p>
+                </div>
+                <div class="event__input">
+                    <label class="editor_label" for="event_name">Название мероприятия</label>
+                    <input type="text" id="event_name" class="event__input-field">
+                </div>
+                <div class="event__input">
+                    <label class="editor_label" for="event_theme">Тематика мероприятия</label>
+                    <select name="event_theme" id="event_theme" class="event__input-field">
+                        <option value="v1">Концерты</option>
+                        <option value="v2">Дискотеки</option>
+                        <option value="v3">Спектакли</option>
+                        <option value="v4">Детское</option>
+                    </select>
+                </div>
+                <div class="event__info">
+                    <button class="add_button" id="add_button" type="button"><img src="../static/img/add_outline_28.svg" class="plus_icon"></img></button>
+                    <label class="event__info_label" for="add_button">Указать категорию</label>
+                </div>
+                <div class="event__input">
+                    <label class="editor_label" for="event_date">Время начала</label>
+                    <input type="datetime-local" id="event_date" class="event__input-field" placeholder="дд.мм.гггг --:--">
+                </div>
+                <div class="event__info">
+                    <button class="add_button" id="add_button" type="button"><img src="../static/img/add_outline_28.svg" class="plus_icon"></img></button>
+                    <label class="event__info_label" for="add_button">Указать время окончания</label>
+                </div>
+                <div class="event__input">
+                    <label class="editor_label" for="event_website">Сайт (если есть)</label>
+                    <input type="text" id="event_website" class="event__input-field">
+                </div>
+                <div class="event__info">
+                    <button class="add_button" id="add_button" type="button"><img src="../static/img/add_outline_28.svg" class="plus_icon"></img></button>
+                    <label class="event__info_label" for="add_button">Указать возрастное ограничение</label>
+                </div>
+                <div class="event__info">
+                    <button class="add_button" id="add_button" type="button"><img src="../static/img/add_outline_28.svg" class="plus_icon"></img></button>
+                    <label class="event__info_label" for="add_button">Указать стоимость</label>
+                </div>
+                <div class="event__info">
+                    <button class="add_button" id="add_button" type="button"><img src="../static/img/add_outline_28.svg" class="plus_icon"></img></button>
+                    <label class="event__info_label" for="add_button">Указать адрес</label>
+                </div>
+                <div class="event__button">
+                    <button type="submit" class="event__button_submit">Создать мероприятие</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
