@@ -331,3 +331,196 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 10
     color: #9181FE;
     fill: #9181FE;
 }
+
+.hobby{
+    margin: 0 16px 48px;
+}
+.feed__content_filters{
+    margin-top: 32px;
+}
+.feed__search{
+    display: flex;
+    border-radius: 8px;
+    border: 0.5px solid var(--dddbff, #DDDBFF);
+    background: var(--f-8-f-7-ff, #F8F7FF);
+    justify-content: space-between;
+    min-width: 343px;
+    height: 44px;
+    align-items: center;
+}
+.search_icon_field{
+    display: flex;
+    gap: 8px;
+    padding-left: 12px;
+}
+.search_input, .search_icon{
+    background-color: #F8F7FF;
+}
+.search_icon{
+    padding: 0 6px;
+}
+.feed__search, .feed__filter_field{
+    margin-bottom: 16px;
+}
+
+.hobby__feed_block{
+    margin-top: 24px;
+    border-top: 0.5px solid #DDDBFF;
+}
+.feed_block-cap{
+    display: flex;
+    height: 56px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.cap_title{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #444444;
+}
+.cap_link{
+    padding-right: 16px;
+    color: #DDDBFF;
+}
+.hobby_cards{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+.hobby_cards::-webkit-scrollbar {
+    display: none;
+}
+.hobby__block_card{
+    display: flex;
+    min-width: 228px;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 84px;
+    align-self: stretch;
+    border-radius: 16px;
+}
+.movie1{
+    background: url('../static/img/johnwcover.jpg');
+}
+.movie2{
+    background: url('../static/img/babayagacover.jpg');
+}
+.movie3{
+    background: url('../static/img/kungfu.png');
+}
+.movie4{
+    background: url('../static/img/trimusq.png');
+}
+.hobby_card-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.hobby_card-rating{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: rgba(253, 253, 253, 0.75);
+}
+.rating-num{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+.hobby_card-title{
+    margin-bottom: 4px;
+    color: #FDFDFD;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.hobby_card-text{
+    color: rgba(253, 253, 253, 0.75);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    align-self: stretch;
+    width: 100%;
+    max-width: 204px;
+}
+.cafe1{
+    background: url('../static/img/cafe1cover.png');
+}
+.cafe2{
+    background: url('../static/img/cafecover2.png');
+}
+.cafe3{
+    background: url('../static/img/cafecover3.png');
+}
+.cafe4{
+    background: url('../static/img/cafecover4.png');
+}
+.book1{
+    background: url('../static/img/bookcover1.png');
+}
+.book2{
+    background: url('../static/img/bookcover2.png');
+}
+.book3{
+    background: url('../static/img/bookcover3.png');
+}
+.book4{
+    background: url('../static/img/bookcover4.png');
+}
+.book5{
+    background: url('../static/img/bookcover5.png');
+}
+.book_card{
+    width: 180px;
+    height: 352px;
+}
+.cover_item{
+    width: 180px;
+    height: 280px;
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+.title_item{
+    color: #444444;
+}
+.theatre_card{
+    width: 228px;
+    height: 232px;
+}
+.theatre__cover_item{
+    width: 228px;
+    height: 180px;
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+.theatre1{
+    background: url('../static/img/teatrecover1.png');
+}
+.theatre2{
+    background: url('../static/img/theatrecover2.png');
+}
+.theatre3{
+    background: url('../static/img/theatrecover3.png');
+}
+.theatre4{
+    background: url('../static/img/theatrecover4.png');
+}
