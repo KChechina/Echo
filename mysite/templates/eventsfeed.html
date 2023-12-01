@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo events feed</title>
+    <link rel="stylesheet" href="../static/stylefeed.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header__block profile">
+        <div class="profile__cap">
+            <a href="../profile/" class="profile__cap_link"><img class="back__arrow" src="../static/img/left_arrow.svg" alt="back"></a>
+            <div class="profile__cap_text">Мероприятия</div>
+            <a href="#" class="profile__cap_link"><img class="edit_icon" src="../static/img/plus.svg" alt="plus"></a>
+        </div>
+    </header>
+    <main class="main__block events">
+        <div class="feed__content">
+            <div class="feed__content_filters">
+                <div class="feed__search">
+                    <div class="search_icon_field">
+                        <img src="../static/img/Search Icon.svg" alt="search_icon">
+                        <input type="search" class="search_input">
+                    </div>
+                    <button class="search_icon">
+                        <img src="../static/img/voice_outline_24.svg" alt="search_icon">
+                    </button>
+                </div>
+                <div class="feed__filter_field">
+                    <div class="filer__form_block">
+                        <select name="filter" id="" class="filer__form">
+                            <option value="v1">Популярное</option>
+                            <option value="v2">Новое</option>
+                        </select>
+                    </div>
+                    <div class="filter_icon">
+                        <img src="../static/img/filter_24.svg" alt="filter">
+                    </div>
+                </div>
+            </div>
+            <section class="events__feed">
+                <div class="events__feed_block">
+                    <div class="feed_block-cap">
+                        <h2 class="cap_title">Для детей</h2>
+                        <a href="#" class="cap_link">Все</a>
+                    </div>
+                    <div class="events_cards">
+                        <div class="events__card_block forkids1">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Ваня Датский</h2>
+                                <p class="hobby_card-text">Москва, Измайловский бульвар,  60/10</p>
+                                <p class="hobby_card-text">26.11.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block forkids2">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Принцесса цирка</h2>
+                                <p class="hobby_card-text">Москва, Пушкинская площадь, 2/1</p>
+                                <p class="hobby_card-text">09.12.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block forkids3">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Бесконечная история</h2>
+                                <p class="hobby_card-text">Москва, Мамоновский переулок, 10с1</p>
+                                <p class="hobby_card-text">29.12.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block forkids4">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Елка. Снежная королева</h2>
+                                <p class="hobby_card-text">Москва, Берсеневская набережная, 20/2</p>
+                                <p class="hobby_card-text">24.12.2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events__feed_block">
+                    <div class="feed_block-cap">
+                        <h2 class="cap_title">Выставки</h2>
+                        <a href="#" class="cap_link">Все</a>
+                    </div>
+                    <div class="events_cards">
+                        <div class="events__card_block exibition1">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Климт. Ожившие полотна</h2>
+                                <p class="hobby_card-text">Москва, Берсеневский переулок, 2 стр 1</p>
+                                <p class="hobby_card-text">до 10 декабря 2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block exibition2">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Николай Рерих</h2>
+                                <p class="hobby_card-text">Москва, Крымский вал, 10</p>
+                                <p class="hobby_card-text">до 10 марта 2024</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block exibition3">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Реальный космос</h2>
+                                <p class="hobby_card-text">Москва, Пушкарев переулок, 5</p>
+                                <p class="hobby_card-text">до 31 января 2024</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block exibition4">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Сальвадор Дали и Пабло Пикассо</h2>
+                                <p class="hobby_card-text">Москва, Старая Басманная улица, 15 стр.3</p>
+                                <p class="hobby_card-text">до 21 января 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events__feed_block">
+                    <div class="feed_block-cap">
+                        <h2 class="cap_title">Концерты</h2>
+                        <a href="#" class="cap_link">Все</a>
+                    </div>
+                    <div class="events_cards">
+                        <div class="events__card_block concert1">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Дискотека 90-2000-х</h2>
+                                <p class="hobby_card-text">Красногорск, Международная улица, 20</p>
+                                <p class="hobby_card-text">09.12.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block concert2">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Балет “Щелкунчик”</h2>
+                                <p class="hobby_card-text">Москва, Измайловское шоссе, 71, корп. 5</p>
+                                <p class="hobby_card-text">26.12.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block concert3">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Хор московского Сретенского монастыря</h2>
+                                <p class="hobby_card-text">Москва, Космодамианская набережная, 52, стр.8</p>
+                                <p class="hobby_card-text">17.01.2024</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block concert4">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Концерт Вивальди “Времена года”</h2>
+                                <p class="hobby_card-text">Москва, Васильевская улица, 13 с1</p>
+                                <p class="hobby_card-text">ноябрь 2023-апрель 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events__feed_block">
+                    <div class="feed_block-cap">
+                        <h2 class="cap_title">Спектакли</h2>
+                        <a href="#" class="cap_link">Все</a>
+                    </div>
+                    <div class="events_cards">
+                        <div class="events__card_block show1">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Гастроль Воланда</h2>
+                                <p class="hobby_card-text">Москва, Тверская улица, 5/6</p>
+                                <p class="hobby_card-text">27.11.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block show2">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Вавилон</h2>
+                                <p class="hobby_card-text">Москва, Трехпрудный переулок, 11/13с1</p>
+                                <p class="hobby_card-text">16.12.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block show3">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Идеальный муж</h2>
+                                <p class="hobby_card-text">Москва, Суворовская площадь, 1/52к2</p>
+                                <p class="hobby_card-text">23.11.2023</p>
+                            </div>
+                        </div>
+                        <div class="events__card_block show4">
+                            <div class="events_card-content">
+                                <h2 class="hobby_card-title">Атом солнца</h2>
+                                <p class="hobby_card-text">Москва, Малая Сухаревская площадь, 5</p>
+                                <p class="hobby_card-text">06.12.2023</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer__profile">
+        <div class="footer__toolbar">
+            <figure class="footer__toolbar_item">
+                <a href="reviewsfeed.html" active>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="svg_icon" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.68658 0 5.68513 1.3443 3.51472 3.51472C1.3443 5.68513 0 8.68658 0 12C0 15.3134 1.3443 18.3149 3.51472 20.4853C5.68513 22.6557 8.68658 24 12 24C15.3134 24 18.3149 22.6557 20.4853 20.4853C22.6557 18.3149 24 15.3134 24 12C24 8.68658 22.6557 5.68513 20.4853 3.51472C18.3149 1.3443 15.3134 0 12 0ZM5.01212 5.01212C6.80163 3.22261 9.27077 2.11765 12 2.11765C14.7292 2.11765 17.1984 3.22261 18.9879 5.01212C20.7774 6.80163 21.8824 9.27077 21.8824 12C21.8824 14.7292 20.7774 17.1984 18.9879 18.9879C17.1984 20.7774 14.7292 21.8824 12 21.8824C9.27077 21.8824 6.80163 20.7774 5.01212 18.9879C3.22261 17.1984 2.11765 14.7292 2.11765 12C2.11765 9.27077 3.22261 6.80163 5.01212 5.01212ZM13.4253 5.78996C12.81 4.6617 11.19 4.66169 10.5747 5.78995L9.25325 8.21293L6.54052 8.72093C5.27734 8.95748 4.77672 10.4982 5.65962 11.4321L7.55566 13.4376L7.20052 16.1745C7.03515 17.449 8.3458 18.4012 9.50677 17.8501L12 16.6666L14.4932 17.8501C15.6542 18.4012 16.9649 17.449 16.7995 16.1745L16.4443 13.4376L18.3404 11.4321C19.2233 10.4982 18.7227 8.95748 17.4595 8.72093L14.7468 8.21293L13.4253 5.78996ZM10.6311 10.1094L12 7.5993L13.3689 10.1094L16.1792 10.6356L14.215 12.7132L14.5829 15.5485L12 14.3225L9.41715 15.5485L9.78506 12.7132L7.82085 10.6356L10.6311 10.1094Z" fill="#888888"/>
+                    </svg>
+                    <figcaption class="svg_label">Отзывы</figcaption>
+                </a>
+            </figure>
+            <figure class="footer__toolbar_item">
+                <a href="hobbyfeed.html">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="svg_icon" d="M13.8696 6.46959C13.8696 5.50309 14.6531 4.71959 15.6196 4.71959C16.5861 4.71959 17.3696 5.50309 17.3696 6.46959C17.3696 7.43609 16.5861 8.21959 15.6196 8.21959C14.6531 8.21959 13.8696 7.43609 13.8696 6.46959Z" fill="#888888"/>
+                        <path class="svg_icon" d="M18.9796 9.47963C18.0131 9.47963 17.2296 10.2631 17.2296 11.2296C17.2296 12.1961 18.0131 12.9796 18.9796 12.9796C19.9461 12.9796 20.7296 12.1961 20.7296 11.2296C20.7296 10.2631 19.9461 9.47963 18.9796 9.47963Z" fill="#888888"/>
+                        <path class="svg_icon" d="M4.76959 11.2296C4.76959 10.2631 5.55309 9.47963 6.51959 9.47963C7.48609 9.47963 8.26959 10.2631 8.26959 11.2296C8.26959 12.1961 7.48609 12.9796 6.51959 12.9796C5.55309 12.9796 4.76959 12.1961 4.76959 11.2296Z" fill="#888888"/>
+                        <path class="svg_icon" d="M9.73958 4.71959C8.77308 4.71959 7.98957 5.50309 7.98957 6.46959C7.98957 7.43609 8.77308 8.21959 9.73958 8.21959C10.7061 8.21959 11.4896 7.43609 11.4896 6.46959C11.4896 5.50309 10.7061 4.71959 9.73958 4.71959Z" fill="#888888"/>
+                        <path class="svg_icon" fill-rule="evenodd" clip-rule="evenodd" d="M18.5978 17.6516C21.5954 17.9731 24.6497 16.6115 24.6496 11.9996C24.6496 8.71352 23.3177 5.73851 21.1642 3.58504C19.0107 1.43156 16.0357 0.0996094 12.7496 0.0996094C9.46352 0.0996094 6.48851 1.43156 4.33504 3.58504C2.18156 5.73851 0.849609 8.71352 0.849609 11.9996C0.849609 15.2857 2.18156 18.2607 4.33504 20.4142C6.48851 22.5677 9.46352 23.8996 12.7496 23.8996C14.3307 23.8996 15.9065 22.4904 15.5174 20.5042C15.4514 20.1674 15.3641 19.8441 15.2825 19.542C14.9269 18.2257 14.6807 17.3142 16.789 17.4596C16.8391 17.463 17.4254 17.5259 18.5978 17.6516ZM18.8216 15.5636L18.4776 15.5267C17.5629 15.4286 17.0256 15.3709 16.9334 15.3646C16.1973 15.3138 15.2925 15.33 14.4973 15.7332C14.0487 15.9607 13.6417 16.3081 13.3538 16.7879C13.0759 17.2509 12.9791 17.7197 12.9535 18.0952C12.908 18.7615 13.078 19.4166 13.17 19.7706C13.2063 19.91 13.2398 20.034 13.2708 20.1489C13.3453 20.4247 13.4058 20.6486 13.4566 20.9079C13.492 21.0887 13.476 21.2125 13.4524 21.295C13.4277 21.3814 13.3827 21.4631 13.3145 21.5384C13.1625 21.7066 12.9358 21.7996 12.7496 21.7996C10.0428 21.7996 7.59571 20.705 5.81996 18.9293C4.04421 17.1535 2.94961 14.7064 2.94961 11.9996C2.94961 9.29283 4.04421 6.84571 5.81996 5.06996C7.59571 3.29421 10.0428 2.19961 12.7496 2.19961C15.4564 2.19961 17.9035 3.29421 19.6793 5.06996C21.455 6.84571 22.5496 9.29284 22.5496 11.9996C22.5496 13.816 21.9725 14.6221 21.4664 15.0119C20.8889 15.4568 19.9755 15.6874 18.8216 15.5636Z" fill="#888888"/>
+                    </svg>
+                    <figcaption class="svg_label">Хобби и досуг</figcaption>
+                </a>
+            </figure>
+            <figure class="footer__toolbar_item">
+                <a href="#">
+                    <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="svg_icon" fill-rule="evenodd" clip-rule="evenodd" d="M23.8715 6.52875C23.5157 6.16922 22.9543 6.11408 22.5354 6.39754C21.8545 6.85828 20.92 6.7858 20.3175 6.18325C19.7149 5.58071 19.6424 4.64621 20.1032 3.9653C20.3866 3.5464 20.3315 2.98501 19.972 2.62925C18.999 1.66656 18.2232 0.934306 17.266 0.623289C16.3513 0.326091 15.366 0.326091 14.4513 0.623289C13.8669 0.813186 13.3723 1.14776 12.8758 1.56929C12.3961 1.97652 11.8504 2.52219 11.1832 3.18941L3.68944 10.6832C3.02223 11.3504 2.47652 11.8961 2.06929 12.3758C1.64776 12.8723 1.31319 13.3669 1.12329 13.9513C0.826092 14.866 0.826091 15.8513 1.12329 16.766C1.43431 17.7232 2.16656 18.499 3.12926 19.472C3.48501 19.8315 4.04639 19.8867 4.46529 19.6032C5.1462 19.1425 6.08068 19.215 6.68321 19.8175C7.28575 20.4201 7.35824 21.3545 6.89751 22.0354C6.61407 22.4543 6.66921 23.0157 7.02874 23.3715C8.0017 24.3342 8.77758 25.0665 9.73481 25.3775C10.6495 25.6747 11.6348 25.6747 12.5495 25.3775C13.1339 25.1876 13.6285 24.853 14.125 24.4315C14.6047 24.0243 15.1504 23.4786 15.8175 22.8114L23.3113 15.3176C23.9786 14.6504 24.5243 14.1047 24.9315 13.625C25.353 13.1285 25.6876 12.6339 25.8775 12.0495C26.1747 11.1348 26.1747 10.1495 25.8775 9.23481C25.5665 8.27759 24.8342 7.50171 23.8715 6.52875ZM18.8312 7.66954C19.9338 8.77219 21.5369 9.06645 22.9076 8.55413C23.5389 9.22363 23.7741 9.56332 23.8784 9.88435C24.0385 10.3769 24.0385 10.9074 23.8784 11.3999C23.8084 11.6154 23.6662 11.8676 23.3291 12.2647C22.984 12.6712 22.4998 13.1565 21.7939 13.8624L20.6049 15.0515L19.4951 13.9417C19.0847 13.5313 18.4193 13.5313 18.0088 13.9417C17.5984 14.3521 17.5984 15.0176 18.0088 15.428L19.1186 16.5378L14.3624 21.2939C13.6565 21.9998 13.1712 22.484 12.7647 22.8291C12.3676 23.1662 12.1154 23.3084 11.8999 23.3784C11.4074 23.5385 10.8769 23.5385 10.3843 23.3784C10.0633 23.2741 9.72362 23.0389 9.05411 22.4075C9.5664 21.0369 9.27214 19.4339 8.1695 18.3312C7.06687 17.2286 5.46379 16.9343 4.09318 17.4466C3.46191 16.7771 3.22665 16.4374 3.12235 16.1164C2.96232 15.6239 2.96232 15.0934 3.12235 14.6009C3.19235 14.3854 3.33456 14.1332 3.67168 13.7361C4.01676 13.3296 4.50094 12.8443 5.20687 12.1383L9.96303 7.38218L11.0727 8.49189C11.4832 8.90232 12.1486 8.90232 12.559 8.49189C12.9695 8.08147 12.9695 7.41603 12.559 7.0056L11.4493 5.89589L12.6383 4.70687C13.3443 4.00094 13.8296 3.51676 14.2361 3.17168C14.6332 2.83456 14.8854 2.69235 15.1009 2.62235C15.5934 2.46232 16.1239 2.46232 16.6164 2.62235C16.9374 2.72665 17.2771 2.9619 17.9466 3.59316C17.4343 4.96378 17.7285 6.5669 18.8312 7.66954ZM15.5317 9.97824C15.1212 9.56781 14.4558 9.56781 14.0454 9.97824C13.6349 10.3887 13.6349 11.0541 14.0454 11.4645L15.0362 12.4554C15.4467 12.8658 16.1121 12.8658 16.5225 12.4554C16.933 12.045 16.933 11.3795 16.5225 10.9691L15.5317 9.97824Z" fill="#888888"/>
+                    </svg>
+                    <figcaption class="svg_label">Мероприятия</figcaption>
+                </a>
+            </figure>
+            <figure class="footer__toolbar_item">
+                <a href="profile.html">
+                    <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="svg_icon" d="M12.25 0C18.8774 0 24.25 5.37258 24.25 12C24.25 18.6274 18.8774 24 12.25 24C5.62258 24 0.25 18.6274 0.25 12C0.25 5.37258 5.62258 0 12.25 0ZM12.25 18.5C10.1641 18.5 8.17004 19.082 6.45321 20.149C8.08817 21.3146 10.089 22 12.25 22C14.4105 22 16.411 21.3148 18.046 20.15C16.3295 19.0818 14.3357 18.5 12.25 18.5ZM12.25 2C6.72715 2 2.25 6.47715 2.25 12C2.25 14.6157 3.25426 16.9968 4.89823 18.7788C7.03562 17.3082 9.58098 16.5 12.25 16.5C14.9193 16.5 17.4649 17.3084 19.6027 18.7774C21.2461 16.9959 22.25 14.6152 22.25 12C22.25 6.47715 17.7728 2 12.25 2ZM12.25 5.5C14.8742 5.5 17 7.62584 17 10.25C17 12.8742 14.8742 15 12.25 15C9.62584 15 7.5 12.8742 7.5 10.25C7.5 7.62584 9.62584 5.5 12.25 5.5ZM12.25 7.5C10.7304 7.5 9.5 8.73041 9.5 10.25C9.5 11.7696 10.7304 13 12.25 13C13.7696 13 15 11.7696 15 10.25C15 8.73041 13.7696 7.5 12.25 7.5Z" fill="#9181FE"/>
+                    </svg>
+                    <figcaption class="svg_label">Профиль</figcaption>
+                </a>
+            </figure>
+        </div>
+    </footer>
+</body>
+</html>

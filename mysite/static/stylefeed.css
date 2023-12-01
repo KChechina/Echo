@@ -332,7 +332,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 10
     fill: #9181FE;
 }
 
-.hobby{
+.hobby, .events{
     margin: 0 16px 48px;
 }
 .feed__content_filters{
@@ -363,7 +363,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 10
     margin-bottom: 16px;
 }
 
-.hobby__feed_block{
+.hobby__feed_block, .events__feed_block{
     margin-top: 24px;
     border-top: 0.5px solid #DDDBFF;
 }
@@ -386,13 +386,13 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 10
     padding-right: 16px;
     color: #DDDBFF;
 }
-.hobby_cards{
+.hobby_cards, .events_cards{
     display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
     gap: 12px;
 }
-.hobby_cards::-webkit-scrollbar {
+.hobby_cards::-webkit-scrollbar, .events_cards::-webkit-scrollbar{
     display: none;
 }
 .hobby__block_card{
@@ -523,4 +523,73 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 10
 }
 .theatre4{
     background: url('../static/img/theatrecover4.png');
+}
+.events__card_block{
+    display: flex;
+    min-width: 224px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 108px 12px 12px;
+}
+.events_card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 200px;
+    text-align: left;
+}
+.forkids1{
+    background: url('../static/img/forkids1.png');
+}
+.forkids2{
+    background: url('../static/img/forkids2.png');
+}
+.forkids3{
+    background: url('../static/img/forkids3.png');
+}
+.forkids4{
+    background: url('../static/img/forkids4.png');
+}
+.events_card-content .hobby_card-title{
+    margin-bottom: 0;
+}
+
+.exibition1{
+    background: url('../static/img/exibitioncover1.png');
+}
+.exibition2{
+    background: url('../static/img/exibitioncover2.png');
+}
+.exibition3{
+    background: url('../static/img/exibitioncover3.png');
+}
+.exibition4{
+    background: url('../static/img/exibitioncover4.png');
+    padding-top: 88px;
+}
+.concert1{
+    background: url('../static/img/concertcover1.png');
+}
+.concert2{
+    background: url('../static/img/concertcover2.png');
+}
+.concert3{
+    background: url('../static/img/concertcover3.png');
+    padding-top: 88px;
+}
+.concert4{
+    background: url('../static/img/concertcover4.png');
+    padding-top: 88px;
+}
+.show1{
+    background: url('../static/img/shoecover1.png');
+}
+.show2{
+    background: url('../static/img/showcover2.png');
+}
+.show3{
+    background: url('../static/img/showcover3.png');
+}
+.show4{
+    background: url('../static/img/showcover4.png');
 }
