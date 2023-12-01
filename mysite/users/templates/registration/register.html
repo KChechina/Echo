@@ -14,22 +14,25 @@
         </div>
     </header>
     <main class="registration__block">
-        <form class="registration__form form" action="post">
+        <form class="registration__form form" method="post">
+            {% csrf_token %}
             <div class="form__item">
-                <label class="form_label" for="email">Почта</label>
-                <input type="email" name="email" id="email" placeholder="example@gmail.com" class="form_input" required>
+                <label class="form_label" for="username">Имя пользователя</label>
+                <input type="text" name="username" id="username" placeholder="Имя пользователя" class="form_input" required>
             </div>
             <div class="form__item">
                 <label class="form_label" for="password">Пароль</label>
-                <input type="password" name="password" id="password" placeholder="Пароль" class="form_input" required>
+                <input type="password" name="password1" id="password" placeholder="Пароль" class="form_input" required>
+                <input type="password" name="password2"  placeholder="Повторить Пароль" class="form_input" required>
+
             </div>
-            <p class="form__text">Есть аккаунт? <a class="login_link" href="../">Войдите</a></p>
-            <button type="submit" class="formsubmit_button intro__buttons">Зарегистрироваться</button>
+            {{form.errors}}
+            <p class="form__text">Есть аккаунт? <a class="login_link" href="{% url 'login' %}">Войдите</a></p>
+            <input type="submit" class="formsubmit_button intro__buttons" value="Зарегистрироваться">
         </form>
         <p class="welcometext">или</p>
         <button class="intro__buttons vk__button"> <img class="vk_icon" src="/static/img/24.png" alt="VK"> Войти через ВКонтакте</button>
     </main>
 </body>
 <script src="/static/script.js"></script>
-</body>
 </html>

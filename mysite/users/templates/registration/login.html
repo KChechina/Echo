@@ -14,15 +14,17 @@
         </div>
     </header>
     <main class="authorisation__block">
-        <form class="authorisation__form form" action="post">
+        <form class="authorisation__form form" method="post">
+            {% csrf_token %}
             <div class="form__item">
-                <label class="form_label" for="email">Почта</label>
-                <input type="email" name="email" id="email" placeholder="example@gmail.com" class="form_input" required>
+                <label class="form_label" for="username">Имя пользователя</label>
+                <input type="text" name="username" id="userName" placeholder="Имя" class="form_input" required>
             </div>
             <div class="form__item">
                 <label class="form_label" for="password">Пароль</label>
                 <input type="password" name="password" id="password" placeholder="Пароль" class="form_input" required>
             </div>
+            {{form.errors}}
             <div class="remindpassword" id="remindpassword"></div>
             <button type="submit" class="formsubmit_button intro__buttons">Войти</button>
         </form>
