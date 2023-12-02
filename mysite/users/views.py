@@ -45,3 +45,12 @@ def hobbyfeed_view(request):
 
 def reviewsfeed_view(request):
     return render(request, "users/reviewsfeed.html")
+
+def eventsfeed_view(request):
+    return render(request, "users/eventsfeed.html")
+
+def eventeditor_view(request):
+    return render(request, "users/eventeditor.html")
+
+def eventeditor2_view(request):
+    return render(request, "users/eventeditor2.html")
